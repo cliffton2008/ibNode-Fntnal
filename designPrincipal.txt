@@ -21,4 +21,5 @@ Design Principal
 5.  Do not keep client connection open for extended time.  Close the connection once data
     request is completed.
   
+6.  First submission to TWS-Server is to tell which version of the client (default is 62).
     
