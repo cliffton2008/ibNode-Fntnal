@@ -19,6 +19,6 @@ Design Principal
     to each server.  
     
 5.  Do not keep client connection open for extended time.  Close the connection once data
-    request is complete.
+    request is completed.
   
     
