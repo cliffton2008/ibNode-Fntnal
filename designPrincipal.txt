@@ -1,0 +1,24 @@
+
+
+Design Principal
+
+1.  Usage Proposal:
+      ib.checkAPIconnection
+      ib.reqCurrTime
+      ib.reqAcctName
+      
+2.  Upon connection to API, server will send message back to client (date and time).  
+    Use this to check API connection is successful.
+    
+3.  If IB date is equal to client date (local system), submit request for data.  
+    Determine if end-of-message (EOM) code is received.
+    EOM will vary depending on the data submitted to the server.
+    Close the connection once EOM is received.
+    
+4.  Avoid creating multiple clients to each server.  Whenever possible, connect only 1 client
+    to each server.  
+    
+5.  Do not keep client connection open for extended time.  Close the connection once data
+    request is complete.
+  
+    
