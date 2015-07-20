@@ -22,4 +22,8 @@ Design Principal
     request is completed.
   
 6.  First submission to TWS-Server is to tell which version of the client (default is 62).
+
+7.  For each socket (or connection), every request must increment the client-id by one
+    (or every request must have a unique client-id).??? True or Not???
+  
     
