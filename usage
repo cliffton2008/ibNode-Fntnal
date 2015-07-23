@@ -3,8 +3,10 @@
 Type of API Submission:
 
 Request:
-  1.  ibRequest('CurrTime')
-  2.  ibRequest('StockQuote')
+  1.  ibRequest('CurrTime')  ---> return timeObject { CurrTime: xxxxxxx }
+  2.  ibRequest('StockQuote')  ---> return 1 stock price { AAPL : 145.56 }
+  3.  ...('Position')
+  4.  ...('Account Info')
 
 
 Trade:
