@@ -1,5 +1,7 @@
 
 
+
+-----------------------------------
 Type of API Submission:
 
 Request:
@@ -8,6 +10,18 @@ Request:
   3.  ...('Position')
   4.  ...('Account Info')
 
-
+------------------------------------
 Trade:
 ibTrade('Stock',tickerID, limitPrice)
+
+
+
+
+
+
+
+------------------------------------
+Detail execution plan:
+
+Step 1:  connect (by creating a variable ibConnect = connect())
+Step 2:  request ()

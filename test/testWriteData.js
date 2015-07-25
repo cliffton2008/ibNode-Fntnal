@@ -8,23 +8,22 @@ var connObj = {
   port: 5001 }
 
 
-function testIn(incoming) {
 var socket = net.connect(connObj);
 
+var x = 1;
 
 socket.write('hi')
-socket.on('error', function(error) { return incoming.push(error) } )
+socket.on('error', function(error) { console.log(error) } )
        .on('data', function (data) {
 
-         var tokens = data.toString()
-         //console.log(tokens);
-         return incoming.concat(tokens) } )
+         console.log(data);
+         //incoming.concat(tokens)
+         x = x +1;
+         socket.end()
+         } )
 
 
-}
-var b = ['test']
-var a = testIn(b)
-console.log(a);
+// setTimeout(function() { console.log(x) }, 1000);
 
 
 
@@ -38,6 +37,6 @@ console.log(a);
 // socket.on('error', function(error) { incoming.push(error) } )
 //       .on('data', function (data) {console.log(data.toString()) } )
 
-var z = [1,2,4]
-console.log(z);
+// var z = [1,2,4]
+// console.log(z);
 //console.log(incoming);
